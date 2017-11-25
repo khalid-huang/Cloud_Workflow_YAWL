@@ -1,0 +1,11 @@
+Manifest-Version: 1.0
+Ant-Version: Apache Ant 1.9.4
+Created-By: 1.8.0_45-b14 (Oracle Corporation)
+Specification-Vendor: The YAWL Foundation
+Specification-Version: 4.1
+Implementation-Version: 1400
+Implementation-Date: 2016-05-10 12.08.21
+Compile-OS: Mac OS X
+Compile-OSVersion: 10.11.4
+Compiled-By: adamsmj
+

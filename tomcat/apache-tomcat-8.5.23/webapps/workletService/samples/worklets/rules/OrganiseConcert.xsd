@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
+    <xs:element name="spec">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="constraints"/>
+                <xs:element ref="external"/>
+            </xs:sequence>
+            <xs:attribute name="identifier" use="required"/>
+            <xs:attribute name="uri" use="required" type="xs:NCName"/>
+            <xs:attribute name="version" use="required" type="xs:decimal"/>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="constraints">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="item"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="item">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="pre"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="pre">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="task"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="task">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element maxOccurs="unbounded" ref="ruleNode"/>
+            </xs:sequence>
+            <xs:attribute name="name" use="required" type="xs:NCName"/>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="external">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="case"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="case">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element maxOccurs="unbounded" ref="ruleNode"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="ruleNode">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="id"/>
+                <xs:element ref="parent"/>
+                <xs:element ref="trueChild"/>
+                <xs:element ref="falseChild"/>
+                <xs:element ref="condition"/>
+                <xs:element ref="conclusion"/>
+                <xs:element ref="cornerstone"/>
+                <xs:element ref="description"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="id" type="xs:integer"/>
+    <xs:element name="parent" type="xs:integer"/>
+    <xs:element name="trueChild" type="xs:integer"/>
+    <xs:element name="falseChild" type="xs:integer"/>
+    <xs:element name="condition" type="xs:string"/>
+    <xs:element name="conclusion">
+        <xs:complexType mixed="true">
+            <xs:sequence>
+                <xs:element minOccurs="0" maxOccurs="unbounded" ref="step"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="step">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="action"/>
+                <xs:element ref="target"/>
+            </xs:sequence>
+            <xs:attribute name="index" use="required" type="xs:integer"/>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="action" type="xs:NCName"/>
+    <xs:element name="target" type="xs:NCName"/>
+    <xs:element name="cornerstone">
+        <xs:complexType>
+            <xs:sequence minOccurs="0">
+                <xs:element ref="TicketsSold"/>
+                <xs:element ref="Seating"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="TicketsSold" type="xs:integer"/>
+    <xs:element name="Seating" type="xs:integer"/>
+    <xs:element name="description" type="xs:string"/>
+</xs:schema>
