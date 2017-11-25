@@ -1,0 +1,490 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<specificationSet xmlns="http://www.yawlfoundation.org/yawlschema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="3.0" xsi:schemaLocation="http://www.yawlfoundation.org/yawlschema http://www.yawlfoundation.org/yawlschema/YAWL_Schema3.0.xsd">
+  <specification uri="yawlTest">
+    <documentation>No description provided</documentation>
+    <metaData>
+      <creator>kevin</creator>
+      <description>No description provided</description>
+      <version>0.1</version>
+      <persistent>false</persistent>
+      <identifier>UID_9c703c8d-c5a0-4835-8bb1-be3fe80c354d</identifier>
+    </metaData>
+    <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" />
+    <decomposition id="Net" isRootNet="true" xsi:type="NetFactsType">
+      <localVariable>
+        <index>0</index>
+        <name>ApplicationID</name>
+        <type>string</type>
+        <namespace>http://www.w3.org/2001/XMLSchema</namespace>
+        <initialValue />
+      </localVariable>
+      <localVariable>
+        <index>1</index>
+        <name>ApplicationAmount</name>
+        <type>double</type>
+        <namespace>http://www.w3.org/2001/XMLSchema</namespace>
+        <initialValue>0</initialValue>
+      </localVariable>
+      <localVariable>
+        <index>2</index>
+        <name>CreditReportRef</name>
+        <type>string</type>
+        <namespace>http://www.w3.org/2001/XMLSchema</namespace>
+        <initialValue />
+      </localVariable>
+      <processControlElements>
+        <inputCondition id="InputCondition">
+          <flowsInto>
+            <nextElementRef id="Receive_and_Validate_Application" />
+          </flowsInto>
+        </inputCondition>
+        <task id="Receive_and_Validate_Application">
+          <name>Receive and Validate Application</name>
+          <flowsInto>
+            <nextElementRef id="Obtain_Credit_Report" />
+          </flowsInto>
+          <flowsInto>
+            <nextElementRef id="Determine_Credit_Requirements" />
+          </flowsInto>
+          <join code="xor" />
+          <split code="and" />
+          <completedMappings>
+            <mapping>
+              <expression query="&lt;ApplicationID&gt;{/Receive_and_Validate_Application/ApplicationID/text()}&lt;/ApplicationID&gt;" />
+              <mapsTo>ApplicationID</mapsTo>
+            </mapping>
+          </completedMappings>
+          <resourcing>
+            <offer initiator="system">
+              <distributionSet>
+                <initialSet>
+                  <participant>PA-bd7ec716-eec9-4339-8eb1-cba5c88d9386</participant>
+                  <role>RO-0e541ddd-ded0-49a0-8d03-db3c2f9296f6</role>
+                </initialSet>
+              </distributionSet>
+            </offer>
+            <allocate initiator="user" />
+            <start initiator="user" />
+          </resourcing>
+          <decomposesTo id="Receive_and_Validate_Application" />
+        </task>
+        <task id="Determine_Credit_Requirements">
+          <name>Determine Credit Requirements</name>
+          <flowsInto>
+            <nextElementRef id="Choose_Approval_Process" />
+          </flowsInto>
+          <join code="xor" />
+          <split code="and" />
+          <startingMappings>
+            <mapping>
+              <expression query="&lt;ApplicationID&gt;{/Net/ApplicationID/text()}&lt;/ApplicationID&gt;" />
+              <mapsTo>ApplicationID</mapsTo>
+            </mapping>
+          </startingMappings>
+          <completedMappings>
+            <mapping>
+              <expression query="&lt;ApplicationAmount&gt;{/Determine_Credit_Requirements/ApplicationAmount/text()}&lt;/ApplicationAmount&gt;" />
+              <mapsTo>ApplicationAmount</mapsTo>
+            </mapping>
+          </completedMappings>
+          <resourcing>
+            <offer initiator="system">
+              <distributionSet>
+                <initialSet>
+                  <participant>PA-bd7ec716-eec9-4339-8eb1-cba5c88d9386</participant>
+                  <role>RO-0e541ddd-ded0-49a0-8d03-db3c2f9296f6</role>
+                </initialSet>
+              </distributionSet>
+            </offer>
+            <allocate initiator="user" />
+            <start initiator="user" />
+          </resourcing>
+          <decomposesTo id="Determine_Credit_Requirements" />
+        </task>
+        <task id="Obtain_Credit_Report">
+          <name>Obtain Credit Report</name>
+          <flowsInto>
+            <nextElementRef id="Choose_Approval_Process" />
+          </flowsInto>
+          <join code="xor" />
+          <split code="and" />
+          <startingMappings>
+            <mapping>
+              <expression query="&lt;ApplicationID&gt;{/Net/ApplicationID/text()}&lt;/ApplicationID&gt;" />
+              <mapsTo>ApplicationID</mapsTo>
+            </mapping>
+          </startingMappings>
+          <completedMappings>
+            <mapping>
+              <expression query="&lt;CreditReportRef&gt;{/Obtain_Credit_Report/CreditReportRef/text()}&lt;/CreditReportRef&gt;" />
+              <mapsTo>CreditReportRef</mapsTo>
+            </mapping>
+          </completedMappings>
+          <resourcing>
+            <offer initiator="system">
+              <distributionSet>
+                <initialSet>
+                  <participant>PA-bd7ec716-eec9-4339-8eb1-cba5c88d9386</participant>
+                  <role>RO-0e541ddd-ded0-49a0-8d03-db3c2f9296f6</role>
+                </initialSet>
+              </distributionSet>
+            </offer>
+            <allocate initiator="user" />
+            <start initiator="user" />
+          </resourcing>
+          <decomposesTo id="Obtain_Credit_Report" />
+        </task>
+        <task id="Choose_Approval_Process">
+          <name>Choose Approval Process</name>
+          <flowsInto>
+            <nextElementRef id="Large_Credit_Approval" />
+            <predicate ordering="0">true()</predicate>
+          </flowsInto>
+          <flowsInto>
+            <nextElementRef id="Small_Credit_Approval" />
+            <isDefaultFlow />
+          </flowsInto>
+          <join code="and" />
+          <split code="xor" />
+          <resourcing>
+            <offer initiator="system">
+              <distributionSet>
+                <initialSet>
+                  <participant>PA-bd7ec716-eec9-4339-8eb1-cba5c88d9386</participant>
+                  <role>RO-0e541ddd-ded0-49a0-8d03-db3c2f9296f6</role>
+                </initialSet>
+              </distributionSet>
+            </offer>
+            <allocate initiator="user" />
+            <start initiator="user" />
+          </resourcing>
+        </task>
+        <task id="Large_Credit_Approval">
+          <name>Large Credit Approval</name>
+          <flowsInto>
+            <nextElementRef id="OutputCondition" />
+          </flowsInto>
+          <join code="xor" />
+          <split code="and" />
+          <startingMappings>
+            <mapping>
+              <expression query="&lt;ApplicationAmount&gt;{/Net/ApplicationAmount/text()}&lt;/ApplicationAmount&gt;" />
+              <mapsTo>ApplicationAmount</mapsTo>
+            </mapping>
+            <mapping>
+              <expression query="&lt;CreditReportRef&gt;{/Net/CreditReportRef/text()}&lt;/CreditReportRef&gt;" />
+              <mapsTo>CreditReportRef</mapsTo>
+            </mapping>
+            <mapping>
+              <expression query="&lt;ApplicationID&gt;{/Net/ApplicationID/text()}&lt;/ApplicationID&gt;" />
+              <mapsTo>ApplicationID</mapsTo>
+            </mapping>
+          </startingMappings>
+          <resourcing>
+            <offer initiator="system">
+              <distributionSet>
+                <initialSet>
+                  <participant>PA-bd7ec716-eec9-4339-8eb1-cba5c88d9386</participant>
+                  <role>RO-0e541ddd-ded0-49a0-8d03-db3c2f9296f6</role>
+                </initialSet>
+              </distributionSet>
+            </offer>
+            <allocate initiator="user" />
+            <start initiator="user" />
+          </resourcing>
+          <decomposesTo id="Large_Credit_Approval" />
+        </task>
+        <task id="Small_Credit_Approval">
+          <name>Small Credit Approval</name>
+          <flowsInto>
+            <nextElementRef id="OutputCondition" />
+          </flowsInto>
+          <join code="xor" />
+          <split code="and" />
+          <startingMappings>
+            <mapping>
+              <expression query="&lt;ApplicationAmount&gt;{/Net/ApplicationAmount/text()}&lt;/ApplicationAmount&gt;" />
+              <mapsTo>ApplicationAmount</mapsTo>
+            </mapping>
+            <mapping>
+              <expression query="&lt;CreditReportRef&gt;{/Net/CreditReportRef/text()}&lt;/CreditReportRef&gt;" />
+              <mapsTo>CreditReportRef</mapsTo>
+            </mapping>
+            <mapping>
+              <expression query="&lt;ApplicationID&gt;{/Net/ApplicationID/text()}&lt;/ApplicationID&gt;" />
+              <mapsTo>ApplicationID</mapsTo>
+            </mapping>
+          </startingMappings>
+          <resourcing>
+            <offer initiator="system">
+              <distributionSet>
+                <initialSet>
+                  <participant>PA-bd7ec716-eec9-4339-8eb1-cba5c88d9386</participant>
+                  <role>RO-0e541ddd-ded0-49a0-8d03-db3c2f9296f6</role>
+                </initialSet>
+              </distributionSet>
+            </offer>
+            <allocate initiator="user" />
+            <start initiator="user" />
+          </resourcing>
+          <decomposesTo id="Small_Credit_Approval" />
+        </task>
+        <outputCondition id="OutputCondition" />
+      </processControlElements>
+    </decomposition>
+    <decomposition id="Determine_Credit_Requirements" xsi:type="WebServiceGatewayFactsType">
+      <name>Determine Credit Requirements</name>
+      <inputParam>
+        <index>0</index>
+        <name>ApplicationID</name>
+        <type>string</type>
+        <namespace>http://www.w3.org/2001/XMLSchema</namespace>
+      </inputParam>
+      <outputParam>
+        <index>1</index>
+        <name>ApplicationAmount</name>
+        <type>double</type>
+        <namespace>http://www.w3.org/2001/XMLSchema</namespace>
+        <defaultValue />
+      </outputParam>
+      <externalInteraction>manual</externalInteraction>
+    </decomposition>
+    <decomposition id="Large_Credit_Approval" xsi:type="WebServiceGatewayFactsType">
+      <name>Large Credit Approval</name>
+      <inputParam>
+        <index>0</index>
+        <name>ApplicationID</name>
+        <type>string</type>
+        <namespace>http://www.w3.org/2001/XMLSchema</namespace>
+      </inputParam>
+      <inputParam>
+        <index>1</index>
+        <name>ApplicationAmount</name>
+        <type>double</type>
+        <namespace>http://www.w3.org/2001/XMLSchema</namespace>
+      </inputParam>
+      <inputParam>
+        <index>2</index>
+        <name>CreditReportRef</name>
+        <type>string</type>
+        <namespace>http://www.w3.org/2001/XMLSchema</namespace>
+      </inputParam>
+      <externalInteraction>manual</externalInteraction>
+    </decomposition>
+    <decomposition id="Obtain_Credit_Report" xsi:type="WebServiceGatewayFactsType">
+      <name>Obtain Credit Report</name>
+      <inputParam>
+        <index>0</index>
+        <name>ApplicationID</name>
+        <type>string</type>
+        <namespace>http://www.w3.org/2001/XMLSchema</namespace>
+      </inputParam>
+      <outputParam>
+        <index>1</index>
+        <name>CreditReportRef</name>
+        <type>string</type>
+        <namespace>http://www.w3.org/2001/XMLSchema</namespace>
+        <defaultValue />
+      </outputParam>
+      <externalInteraction>manual</externalInteraction>
+    </decomposition>
+    <decomposition id="Receive_and_Validate_Application" xsi:type="WebServiceGatewayFactsType">
+      <name>Receive and Validate Application</name>
+      <outputParam>
+        <index>0</index>
+        <name>ApplicationID</name>
+        <type>string</type>
+        <namespace>http://www.w3.org/2001/XMLSchema</namespace>
+        <defaultValue />
+      </outputParam>
+      <externalInteraction>manual</externalInteraction>
+    </decomposition>
+    <decomposition id="Small_Credit_Approval" xsi:type="WebServiceGatewayFactsType">
+      <name>Small Credit Approval</name>
+      <inputParam>
+        <index>0</index>
+        <name>ApplicationID</name>
+        <type>string</type>
+        <namespace>http://www.w3.org/2001/XMLSchema</namespace>
+      </inputParam>
+      <inputParam>
+        <index>1</index>
+        <name>ApplicationAmount</name>
+        <type>double</type>
+        <namespace>http://www.w3.org/2001/XMLSchema</namespace>
+      </inputParam>
+      <inputParam>
+        <index>2</index>
+        <name>CreditReportRef</name>
+        <type>string</type>
+        <namespace>http://www.w3.org/2001/XMLSchema</namespace>
+      </inputParam>
+      <externalInteraction>manual</externalInteraction>
+    </decomposition>
+  </specification>
+  <layout>
+    <locale language="en" country="US"/>
+    <specification id="yawlTest">
+      <size w="62" h="26"/>
+      <net id="Net">
+        <bounds x="0" y="0" w="900" h="484"/>
+        <frame x="0" y="0" w="903" h="487"/>
+        <viewport x="0" y="0" w="903" h="487"/>
+        <vertex id="OutputCondition">
+          <attributes>
+            <bounds x="828" y="240" w="32" h="32"/>
+          </attributes>
+        </vertex>
+        <vertex id="InputCondition">
+          <attributes>
+            <bounds x="36" y="240" w="32" h="32"/>
+          </attributes>
+        </vertex>
+        <container id="Receive_and_Validate_Application">
+          <vertex>
+            <attributes>
+              <bounds x="180" y="252" w="32" h="32"/>
+            </attributes>
+          </vertex>
+          <label>
+            <attributes>
+              <bounds x="152" y="284" w="96" h="72"/>
+            </attributes>
+          </label>
+          <decorator type="AND_split">
+            <position>13</position>
+            <attributes>
+              <bounds x="211" y="252" w="11" h="32"/>
+            </attributes>
+          </decorator>
+        </container>
+        <container id="Small_Credit_Approval">
+          <vertex>
+            <attributes>
+              <bounds x="632" y="368" w="32" h="32"/>
+            </attributes>
+          </vertex>
+          <label>
+            <attributes>
+              <bounds x="600" y="400" w="96" h="54"/>
+            </attributes>
+          </label>
+        </container>
+        <container id="Obtain_Credit_Report">
+          <vertex>
+            <attributes>
+              <bounds x="324" y="356" w="32" h="32"/>
+            </attributes>
+          </vertex>
+          <label>
+            <attributes>
+              <bounds x="292" y="388" w="96" h="54"/>
+            </attributes>
+          </label>
+        </container>
+        <container id="Large_Credit_Approval">
+          <vertex>
+            <attributes>
+              <bounds x="616" y="132" w="32" h="32"/>
+            </attributes>
+          </vertex>
+          <label>
+            <attributes>
+              <bounds x="584" y="164" w="96" h="54"/>
+            </attributes>
+          </label>
+        </container>
+        <container id="Choose_Approval_Process">
+          <vertex>
+            <attributes>
+              <bounds x="456" y="244" w="32" h="32"/>
+            </attributes>
+          </vertex>
+          <label>
+            <attributes>
+              <bounds x="424" y="276" w="96" h="54"/>
+            </attributes>
+          </label>
+          <decorator type="XOR_split">
+            <position>13</position>
+            <attributes>
+              <bounds x="487" y="244" w="11" h="32"/>
+            </attributes>
+          </decorator>
+          <decorator type="AND_join">
+            <position>12</position>
+            <attributes>
+              <bounds x="446" y="244" w="11" h="32"/>
+            </attributes>
+          </decorator>
+        </container>
+        <container id="Determine_Credit_Requirements">
+          <vertex>
+            <attributes>
+              <bounds x="300" y="144" w="32" h="32"/>
+            </attributes>
+          </vertex>
+          <label>
+            <attributes>
+              <bounds x="262" y="176" w="109" h="54"/>
+            </attributes>
+          </label>
+        </container>
+        <flow source="Small_Credit_Approval" target="OutputCondition">
+          <ports in="13" out="12"/>
+          <attributes>
+            <lineStyle>11</lineStyle>
+          </attributes>
+        </flow>
+        <flow source="Choose_Approval_Process" target="Small_Credit_Approval">
+          <ports in="4" out="12"/>
+          <attributes>
+            <lineStyle>11</lineStyle>
+          </attributes>
+        </flow>
+        <flow source="Large_Credit_Approval" target="OutputCondition">
+          <ports in="13" out="12"/>
+          <attributes>
+            <lineStyle>11</lineStyle>
+          </attributes>
+        </flow>
+        <flow source="InputCondition" target="Receive_and_Validate_Application">
+          <ports in="13" out="12"/>
+          <attributes>
+            <lineStyle>11</lineStyle>
+          </attributes>
+        </flow>
+        <flow source="Determine_Credit_Requirements" target="Choose_Approval_Process">
+          <ports in="13" out="2"/>
+          <attributes>
+            <lineStyle>11</lineStyle>
+          </attributes>
+        </flow>
+        <flow source="Receive_and_Validate_Application" target="Obtain_Credit_Report">
+          <ports in="3" out="12"/>
+          <attributes>
+            <lineStyle>11</lineStyle>
+          </attributes>
+        </flow>
+        <flow source="Receive_and_Validate_Application" target="Determine_Credit_Requirements">
+          <ports in="2" out="12"/>
+          <attributes>
+            <lineStyle>11</lineStyle>
+          </attributes>
+        </flow>
+        <flow source="Choose_Approval_Process" target="Large_Credit_Approval">
+          <ports in="1" out="12"/>
+          <attributes>
+            <lineStyle>11</lineStyle>
+          </attributes>
+        </flow>
+        <flow source="Obtain_Credit_Report" target="Choose_Approval_Process">
+          <ports in="13" out="3"/>
+          <attributes>
+            <lineStyle>11</lineStyle>
+          </attributes>
+        </flow>
+      </net>
+    </specification>
+  </layout>
+</specificationSet>
