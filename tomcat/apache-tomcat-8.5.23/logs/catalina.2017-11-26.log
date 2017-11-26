@@ -1,0 +1,268 @@
+26-Nov-2017 16:04:00.052 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version:        Apache Tomcat/8.5.23
+26-Nov-2017 16:04:00.095 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Sep 28 2017 10:30:11 UTC
+26-Nov-2017 16:04:00.096 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server number:         8.5.23.0
+26-Nov-2017 16:04:00.097 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Linux
+26-Nov-2017 16:04:00.097 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            4.10.0-40-generic
+26-Nov-2017 16:04:00.098 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          amd64
+26-Nov-2017 16:04:00.099 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             /usr/lib/jvm/jdk1.8.0_144/jre
+26-Nov-2017 16:04:00.099 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           1.8.0_144-b01
+26-Nov-2017 16:04:00.099 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Oracle Corporation
+26-Nov-2017 16:04:00.100 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         /home/kevin/YAN/Cloud_Workflow_YAWL/tomcat/apache-tomcat-8.5.23
+26-Nov-2017 16:04:00.100 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         /home/kevin/YAN/Cloud_Workflow_YAWL/tomcat/apache-tomcat-8.5.23
+26-Nov-2017 16:04:00.100 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=/home/kevin/YAN/Cloud_Workflow_YAWL/tomcat/apache-tomcat-8.5.23/conf/logging.properties
+26-Nov-2017 16:04:00.100 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+26-Nov-2017 16:04:00.100 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+26-Nov-2017 16:04:00.100 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+26-Nov-2017 16:04:00.100 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=/home/kevin/YAN/Cloud_Workflow_YAWL/tomcat/apache-tomcat-8.5.23
+26-Nov-2017 16:04:00.100 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=/home/kevin/YAN/Cloud_Workflow_YAWL/tomcat/apache-tomcat-8.5.23
+26-Nov-2017 16:04:00.101 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=/home/kevin/YAN/Cloud_Workflow_YAWL/tomcat/apache-tomcat-8.5.23/temp
+26-Nov-2017 16:04:00.101 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/usr/java/packages/lib/amd64:/usr/lib64:/lib64:/lib:/usr/lib]
+26-Nov-2017 16:04:00.730 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8080"]
+26-Nov-2017 16:04:00.792 INFO [main] org.apache.tomcat.util.net.NioSelectorPool.getSharedSelector Using a shared selector for servlet write/read
+26-Nov-2017 16:04:00.809 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["ajp-nio-8009"]
+26-Nov-2017 16:04:00.810 INFO [main] org.apache.tomcat.util.net.NioSelectorPool.getSharedSelector Using a shared selector for servlet write/read
+26-Nov-2017 16:04:00.810 INFO [main] org.apache.catalina.startup.Catalina.load Initialization processed in 2121 ms
+26-Nov-2017 16:04:00.893 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service [Catalina]
+26-Nov-2017 16:04:00.893 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet Engine: Apache Tomcat/8.5.23
+26-Nov-2017 16:04:01.008 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive [/home/kevin/YAN/Cloud_Workflow_YAWL/tomcat/apache-tomcat-8.5.23/webapps/yawlSMSInvoker.war]
+26-Nov-2017 16:04:02.568 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [/home/kevin/YAN/Cloud_Workflow_YAWL/tomcat/apache-tomcat-8.5.23/webapps/yawlSMSInvoker.war] has finished in [1,560] ms
+26-Nov-2017 16:04:02.623 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive [/home/kevin/YAN/Cloud_Workflow_YAWL/tomcat/apache-tomcat-8.5.23/webapps/resourceService.war]
+26-Nov-2017 16:04:05.892 INFO [localhost-startStop-1] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+26-Nov-2017 16:04:10.916 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [/home/kevin/YAN/Cloud_Workflow_YAWL/tomcat/apache-tomcat-8.5.23/webapps/resourceService.war] has finished in [8,293] ms
+26-Nov-2017 16:04:10.946 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive [/home/kevin/YAN/Cloud_Workflow_YAWL/tomcat/apache-tomcat-8.5.23/webapps/twitterService.war]
+26-Nov-2017 16:04:11.963 INFO [localhost-startStop-1] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+26-Nov-2017 16:04:12.327 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [/home/kevin/YAN/Cloud_Workflow_YAWL/tomcat/apache-tomcat-8.5.23/webapps/twitterService.war] has finished in [1,381] ms
+26-Nov-2017 16:04:12.371 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive [/home/kevin/YAN/Cloud_Workflow_YAWL/tomcat/apache-tomcat-8.5.23/webapps/mailService.war]
+26-Nov-2017 16:04:12.678 INFO [localhost-startStop-1] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+26-Nov-2017 16:04:12.922 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [/home/kevin/YAN/Cloud_Workflow_YAWL/tomcat/apache-tomcat-8.5.23/webapps/mailService.war] has finished in [550] ms
+26-Nov-2017 16:04:12.949 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive [/home/kevin/YAN/Cloud_Workflow_YAWL/tomcat/apache-tomcat-8.5.23/webapps/yawl.war]
+26-Nov-2017 16:04:14.115 INFO [localhost-startStop-1] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+26-Nov-2017 16:04:17.333 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [/home/kevin/YAN/Cloud_Workflow_YAWL/tomcat/apache-tomcat-8.5.23/webapps/yawl.war] has finished in [4,383] ms
+26-Nov-2017 16:04:17.361 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive [/home/kevin/YAN/Cloud_Workflow_YAWL/tomcat/apache-tomcat-8.5.23/webapps/schedulingService.war]
+26-Nov-2017 16:04:18.453 INFO [localhost-startStop-1] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+26-Nov-2017 16:04:20.357 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [/home/kevin/YAN/Cloud_Workflow_YAWL/tomcat/apache-tomcat-8.5.23/webapps/schedulingService.war] has finished in [2,995] ms
+26-Nov-2017 16:04:20.376 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive [/home/kevin/YAN/Cloud_Workflow_YAWL/tomcat/apache-tomcat-8.5.23/webapps/procletService.war]
+26-Nov-2017 16:04:21.353 INFO [localhost-startStop-1] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+26-Nov-2017 16:04:23.345 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [/home/kevin/YAN/Cloud_Workflow_YAWL/tomcat/apache-tomcat-8.5.23/webapps/procletService.war] has finished in [2,969] ms
+26-Nov-2017 16:04:23.370 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive [/home/kevin/YAN/Cloud_Workflow_YAWL/tomcat/apache-tomcat-8.5.23/webapps/documentStore.war]
+26-Nov-2017 16:04:24.132 INFO [localhost-startStop-1] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+26-Nov-2017 16:04:25.607 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [/home/kevin/YAN/Cloud_Workflow_YAWL/tomcat/apache-tomcat-8.5.23/webapps/documentStore.war] has finished in [2,237] ms
+26-Nov-2017 16:04:25.633 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive [/home/kevin/YAN/Cloud_Workflow_YAWL/tomcat/apache-tomcat-8.5.23/webapps/digitalSignature.war]
+26-Nov-2017 16:04:26.229 INFO [localhost-startStop-1] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+26-Nov-2017 16:04:26.504 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [/home/kevin/YAN/Cloud_Workflow_YAWL/tomcat/apache-tomcat-8.5.23/webapps/digitalSignature.war] has finished in [871] ms
+26-Nov-2017 16:04:26.530 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive [/home/kevin/YAN/Cloud_Workflow_YAWL/tomcat/apache-tomcat-8.5.23/webapps/yawlWSInvoker.war]
+26-Nov-2017 16:04:26.936 INFO [localhost-startStop-1] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+26-Nov-2017 16:04:27.217 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [/home/kevin/YAN/Cloud_Workflow_YAWL/tomcat/apache-tomcat-8.5.23/webapps/yawlWSInvoker.war] has finished in [687] ms
+26-Nov-2017 16:04:27.243 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive [/home/kevin/YAN/Cloud_Workflow_YAWL/tomcat/apache-tomcat-8.5.23/webapps/costService.war]
+26-Nov-2017 16:04:28.359 INFO [localhost-startStop-1] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+26-Nov-2017 16:04:30.345 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [/home/kevin/YAN/Cloud_Workflow_YAWL/tomcat/apache-tomcat-8.5.23/webapps/costService.war] has finished in [3,102] ms
+26-Nov-2017 16:04:30.368 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive [/home/kevin/YAN/Cloud_Workflow_YAWL/tomcat/apache-tomcat-8.5.23/webapps/workletService.war]
+26-Nov-2017 16:04:31.300 INFO [localhost-startStop-1] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+26-Nov-2017 16:04:33.860 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [/home/kevin/YAN/Cloud_Workflow_YAWL/tomcat/apache-tomcat-8.5.23/webapps/workletService.war] has finished in [3,492] ms
+26-Nov-2017 16:04:33.884 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive [/home/kevin/YAN/Cloud_Workflow_YAWL/tomcat/apache-tomcat-8.5.23/webapps/mailSender.war]
+26-Nov-2017 16:04:34.199 INFO [localhost-startStop-1] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+26-Nov-2017 16:04:34.443 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [/home/kevin/YAN/Cloud_Workflow_YAWL/tomcat/apache-tomcat-8.5.23/webapps/mailSender.war] has finished in [559] ms
+26-Nov-2017 16:04:34.468 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive [/home/kevin/YAN/Cloud_Workflow_YAWL/tomcat/apache-tomcat-8.5.23/webapps/monitorService.war]
+26-Nov-2017 16:04:35.048 INFO [localhost-startStop-1] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+26-Nov-2017 16:04:35.619 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [/home/kevin/YAN/Cloud_Workflow_YAWL/tomcat/apache-tomcat-8.5.23/webapps/monitorService.war] has finished in [1,151] ms
+26-Nov-2017 16:04:35.621 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/kevin/YAN/Cloud_Workflow_YAWL/tomcat/apache-tomcat-8.5.23/webapps/manager]
+26-Nov-2017 16:04:35.663 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/kevin/YAN/Cloud_Workflow_YAWL/tomcat/apache-tomcat-8.5.23/webapps/manager] has finished in [42] ms
+26-Nov-2017 16:04:35.664 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/kevin/YAN/Cloud_Workflow_YAWL/tomcat/apache-tomcat-8.5.23/webapps/host-manager]
+26-Nov-2017 16:04:35.678 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/kevin/YAN/Cloud_Workflow_YAWL/tomcat/apache-tomcat-8.5.23/webapps/host-manager] has finished in [14] ms
+26-Nov-2017 16:04:35.678 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/kevin/YAN/Cloud_Workflow_YAWL/tomcat/apache-tomcat-8.5.23/webapps/docs]
+26-Nov-2017 16:04:35.695 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/kevin/YAN/Cloud_Workflow_YAWL/tomcat/apache-tomcat-8.5.23/webapps/docs] has finished in [17] ms
+26-Nov-2017 16:04:35.696 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/kevin/YAN/Cloud_Workflow_YAWL/tomcat/apache-tomcat-8.5.23/webapps/ROOT]
+26-Nov-2017 16:04:35.721 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/kevin/YAN/Cloud_Workflow_YAWL/tomcat/apache-tomcat-8.5.23/webapps/ROOT] has finished in [26] ms
+26-Nov-2017 16:04:35.721 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/kevin/YAN/Cloud_Workflow_YAWL/tomcat/apache-tomcat-8.5.23/webapps/examples]
+26-Nov-2017 16:04:35.955 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/kevin/YAN/Cloud_Workflow_YAWL/tomcat/apache-tomcat-8.5.23/webapps/examples] has finished in [234] ms
+26-Nov-2017 16:04:35.964 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8080"]
+26-Nov-2017 16:04:35.980 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["ajp-nio-8009"]
+26-Nov-2017 16:04:36.166 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in 35355 ms
+26-Nov-2017 16:04:52.731 INFO [http-nio-8080-exec-3] org.apache.tomcat.util.http.parser.Cookie.logInvalidHeader A cookie header was received [/Login.jsp=left:0&top:0; JSESSIONID=5B26C2AC6FA0C038D511A1B7ADD675EE; JSESSIONID=1A5E18A96F3C2003FE659643FCDE1F19] that contained an invalid cookie. That cookie will be ignored.Note: further occurrences of this error will be logged at DEBUG level.
+26-Nov-2017 16:41:20.894 INFO [main] org.apache.catalina.core.StandardServer.await A valid shutdown command was received via the shutdown port. Stopping the Server instance.
+26-Nov-2017 16:41:20.895 INFO [main] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["http-nio-8080"]
+26-Nov-2017 16:41:20.946 INFO [main] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["ajp-nio-8009"]
+26-Nov-2017 16:41:20.996 INFO [main] org.apache.catalina.core.StandardService.stopInternal Stopping service [Catalina]
+26-Nov-2017 16:41:21.143 WARNING [localhost-startStop-2] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesJdbc The web application [schedulingService] registered the JDBC driver [org.postgresql.Driver] but failed to unregister it when the web application was stopped. To prevent a memory leak, the JDBC Driver has been forcibly unregistered.
+26-Nov-2017 16:41:21.143 WARNING [localhost-startStop-2] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesThreads The web application [schedulingService] appears to have started a thread named [C3P0PooledConnectionPoolManager[identityToken->z8kfsx9r1wmrkw2bvcm7v|179cab83]-AdminTaskTimer] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.lang.Object.wait(Native Method)
+ java.util.TimerThread.mainLoop(Timer.java:552)
+ java.util.TimerThread.run(Timer.java:505)
+26-Nov-2017 16:41:21.144 WARNING [localhost-startStop-2] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesThreads The web application [schedulingService] appears to have started a thread named [C3P0PooledConnectionPoolManager[identityToken->z8kfsx9r1wmrkw2bvcm7v|179cab83]-HelperThread-#0] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.lang.Object.wait(Native Method)
+ com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread.run(ThreadPoolAsynchronousRunner.java:635)
+26-Nov-2017 16:41:21.144 WARNING [localhost-startStop-2] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesThreads The web application [schedulingService] appears to have started a thread named [C3P0PooledConnectionPoolManager[identityToken->z8kfsx9r1wmrkw2bvcm7v|179cab83]-HelperThread-#1] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.lang.Object.wait(Native Method)
+ com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread.run(ThreadPoolAsynchronousRunner.java:635)
+26-Nov-2017 16:41:21.144 WARNING [localhost-startStop-2] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesThreads The web application [schedulingService] appears to have started a thread named [C3P0PooledConnectionPoolManager[identityToken->z8kfsx9r1wmrkw2bvcm7v|179cab83]-HelperThread-#2] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.lang.Object.wait(Native Method)
+ com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread.run(ThreadPoolAsynchronousRunner.java:635)
+26-Nov-2017 16:41:21.144 WARNING [localhost-startStop-2] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesThreads The web application [schedulingService] appears to have started a thread named [net.sf.ehcache.CacheManager@4b03a2e8] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.lang.Object.wait(Native Method)
+ java.util.TimerThread.mainLoop(Timer.java:552)
+ java.util.TimerThread.run(Timer.java:505)
+26-Nov-2017 16:41:21.145 WARNING [localhost-startStop-2] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesThreads The web application [schedulingService] appears to have started a thread named [hibernate.test.org.hibernate.cache.spi.UpdateTimestampsCache.data] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ sun.misc.Unsafe.park(Native Method)
+ java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:215)
+ java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:2078)
+ java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1093)
+ java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:809)
+ java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1074)
+ java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1134)
+ java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+ java.lang.Thread.run(Thread.java:748)
+26-Nov-2017 16:41:21.145 WARNING [localhost-startStop-2] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesThreads The web application [schedulingService] appears to have started a thread named [hibernate.test.org.hibernate.cache.internal.StandardQueryCache.data] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ sun.misc.Unsafe.park(Native Method)
+ java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:215)
+ java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:2078)
+ java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1093)
+ java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:809)
+ java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1074)
+ java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1134)
+ java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+ java.lang.Thread.run(Thread.java:748)
+26-Nov-2017 16:41:21.145 WARNING [localhost-startStop-2] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesThreads The web application [schedulingService] appears to have started a thread named [C3P0PooledConnectionPoolManager[identityToken->z8kfsx9r1wmrkw2bvcm7v|125612b5]-AdminTaskTimer] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.lang.Object.wait(Native Method)
+ java.util.TimerThread.mainLoop(Timer.java:552)
+ java.util.TimerThread.run(Timer.java:505)
+26-Nov-2017 16:41:21.145 WARNING [localhost-startStop-2] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesThreads The web application [schedulingService] appears to have started a thread named [C3P0PooledConnectionPoolManager[identityToken->z8kfsx9r1wmrkw2bvcm7v|125612b5]-HelperThread-#0] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.lang.Object.wait(Native Method)
+ com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread.run(ThreadPoolAsynchronousRunner.java:635)
+26-Nov-2017 16:41:21.146 WARNING [localhost-startStop-2] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesThreads The web application [schedulingService] appears to have started a thread named [C3P0PooledConnectionPoolManager[identityToken->z8kfsx9r1wmrkw2bvcm7v|125612b5]-HelperThread-#1] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.lang.Object.wait(Native Method)
+ com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread.run(ThreadPoolAsynchronousRunner.java:635)
+26-Nov-2017 16:41:21.146 WARNING [localhost-startStop-2] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesThreads The web application [schedulingService] appears to have started a thread named [C3P0PooledConnectionPoolManager[identityToken->z8kfsx9r1wmrkw2bvcm7v|125612b5]-HelperThread-#2] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.lang.Object.wait(Native Method)
+ com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread.run(ThreadPoolAsynchronousRunner.java:635)
+26-Nov-2017 16:41:21.146 WARNING [localhost-startStop-2] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesThreads The web application [schedulingService] appears to have started a thread named [net.sf.ehcache.CacheManager@19cf165b] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.lang.Object.wait(Native Method)
+ java.util.TimerThread.mainLoop(Timer.java:552)
+ java.util.TimerThread.run(Timer.java:505)
+26-Nov-2017 16:41:21.147 WARNING [localhost-startStop-2] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesThreads The web application [schedulingService] appears to have started a thread named [hibernate.test.org.hibernate.cache.spi.UpdateTimestampsCache.data] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ sun.misc.Unsafe.park(Native Method)
+ java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:215)
+ java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:2078)
+ java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1093)
+ java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:809)
+ java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1074)
+ java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1134)
+ java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+ java.lang.Thread.run(Thread.java:748)
+26-Nov-2017 16:41:21.147 WARNING [localhost-startStop-2] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesThreads The web application [schedulingService] appears to have started a thread named [hibernate.test.org.hibernate.cache.internal.StandardQueryCache.data] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ sun.misc.Unsafe.park(Native Method)
+ java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:215)
+ java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:2078)
+ java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1093)
+ java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:809)
+ java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1074)
+ java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1134)
+ java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+ java.lang.Thread.run(Thread.java:748)
+26-Nov-2017 16:41:21.167 WARNING [localhost-startStop-2] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesJdbc The web application [costService] registered the JDBC driver [org.postgresql.Driver] but failed to unregister it when the web application was stopped. To prevent a memory leak, the JDBC Driver has been forcibly unregistered.
+26-Nov-2017 16:41:21.445 WARNING [localhost-startStop-2] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesThreads The web application [resourceService] appears to have started a thread named [pool-4-thread-1] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ sun.misc.Unsafe.park(Native Method)
+ java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:215)
+ java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:2078)
+ java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1093)
+ java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:809)
+ java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1074)
+ java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1134)
+ java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+ java.lang.Thread.run(Thread.java:748)
+26-Nov-2017 16:41:21.457 WARNING [localhost-startStop-2] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesJdbc The web application [procletService] registered the JDBC driver [org.postgresql.Driver] but failed to unregister it when the web application was stopped. To prevent a memory leak, the JDBC Driver has been forcibly unregistered.
+26-Nov-2017 16:41:21.462 INFO [main] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-8080"]
+26-Nov-2017 16:41:21.464 INFO [main] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["ajp-nio-8009"]
+26-Nov-2017 16:41:21.466 INFO [main] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-8080"]
+26-Nov-2017 16:41:21.466 INFO [main] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["ajp-nio-8009"]
+26-Nov-2017 16:54:19.285 INFO [C3P0PooledConnectionPoolManager[identityToken->z8kfsx9r1wmrkw2bvcm7v|179cab83]-AdminTaskTimer] org.apache.catalina.loader.WebappClassLoaderBase.checkStateForResourceLoading Illegal access: this web application instance has been stopped already. Could not load [com.mchange.v2.resourcepool.BasicResourcePool$AsyncTestIdleResourceTask]. The following stack trace is thrown for debugging purposes as well as to attempt to terminate the thread which caused the illegal access.
+ java.lang.IllegalStateException: Illegal access: this web application instance has been stopped already. Could not load [com.mchange.v2.resourcepool.BasicResourcePool$AsyncTestIdleResourceTask]. The following stack trace is thrown for debugging purposes as well as to attempt to terminate the thread which caused the illegal access.
+	at org.apache.catalina.loader.WebappClassLoaderBase.checkStateForResourceLoading(WebappClassLoaderBase.java:1311)
+	at org.apache.catalina.loader.WebappClassLoaderBase.checkStateForClassLoading(WebappClassLoaderBase.java:1299)
+	at org.apache.catalina.loader.WebappClassLoaderBase.loadClass(WebappClassLoaderBase.java:1158)
+	at org.apache.catalina.loader.WebappClassLoaderBase.loadClass(WebappClassLoaderBase.java:1119)
+	at com.mchange.v2.resourcepool.BasicResourcePool.checkIdleResources(BasicResourcePool.java:1584)
+	at com.mchange.v2.resourcepool.BasicResourcePool.access$2000(BasicResourcePool.java:44)
+	at com.mchange.v2.resourcepool.BasicResourcePool$CheckIdleResourcesTask.run(BasicResourcePool.java:2116)
+	at java.util.TimerThread.mainLoop(Timer.java:555)
+	at java.util.TimerThread.run(Timer.java:505)
+
+26-Nov-2017 17:19:42.049 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version:        Apache Tomcat/8.5.23
+26-Nov-2017 17:19:42.051 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Sep 28 2017 10:30:11 UTC
+26-Nov-2017 17:19:42.051 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server number:         8.5.23.0
+26-Nov-2017 17:19:42.051 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Linux
+26-Nov-2017 17:19:42.051 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            4.10.0-40-generic
+26-Nov-2017 17:19:42.051 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          amd64
+26-Nov-2017 17:19:42.051 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             /usr/lib/jvm/jdk1.8.0_144/jre
+26-Nov-2017 17:19:42.051 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           1.8.0_144-b01
+26-Nov-2017 17:19:42.051 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Oracle Corporation
+26-Nov-2017 17:19:42.052 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         /home/kevin/YAN/Cloud_Workflow_YAWL/tomcat/apache-tomcat-8.5.23
+26-Nov-2017 17:19:42.052 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         /home/kevin/YAN/Cloud_Workflow_YAWL/tomcat/apache-tomcat-8.5.23
+26-Nov-2017 17:19:42.052 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=/home/kevin/YAN/Cloud_Workflow_YAWL/tomcat/apache-tomcat-8.5.23/conf/logging.properties
+26-Nov-2017 17:19:42.052 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+26-Nov-2017 17:19:42.052 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+26-Nov-2017 17:19:42.052 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+26-Nov-2017 17:19:42.052 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=/home/kevin/YAN/Cloud_Workflow_YAWL/tomcat/apache-tomcat-8.5.23
+26-Nov-2017 17:19:42.052 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=/home/kevin/YAN/Cloud_Workflow_YAWL/tomcat/apache-tomcat-8.5.23
+26-Nov-2017 17:19:42.052 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=/home/kevin/YAN/Cloud_Workflow_YAWL/tomcat/apache-tomcat-8.5.23/temp
+26-Nov-2017 17:19:42.053 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/usr/java/packages/lib/amd64:/usr/lib64:/lib64:/lib:/usr/lib]
+26-Nov-2017 17:19:42.154 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8080"]
+26-Nov-2017 17:19:42.166 INFO [main] org.apache.tomcat.util.net.NioSelectorPool.getSharedSelector Using a shared selector for servlet write/read
+26-Nov-2017 17:19:42.169 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["ajp-nio-8009"]
+26-Nov-2017 17:19:42.170 INFO [main] org.apache.tomcat.util.net.NioSelectorPool.getSharedSelector Using a shared selector for servlet write/read
+26-Nov-2017 17:19:42.170 INFO [main] org.apache.catalina.startup.Catalina.load Initialization processed in 470 ms
+26-Nov-2017 17:19:42.187 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service [Catalina]
+26-Nov-2017 17:19:42.188 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet Engine: Apache Tomcat/8.5.23
+26-Nov-2017 17:19:42.219 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive [/home/kevin/YAN/Cloud_Workflow_YAWL/tomcat/apache-tomcat-8.5.23/webapps/yawlSMSInvoker.war]
+26-Nov-2017 17:19:42.819 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [/home/kevin/YAN/Cloud_Workflow_YAWL/tomcat/apache-tomcat-8.5.23/webapps/yawlSMSInvoker.war] has finished in [600] ms
+26-Nov-2017 17:19:42.819 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive [/home/kevin/YAN/Cloud_Workflow_YAWL/tomcat/apache-tomcat-8.5.23/webapps/resourceService.war]
+26-Nov-2017 17:19:43.938 INFO [localhost-startStop-1] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+26-Nov-2017 17:19:46.901 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [/home/kevin/YAN/Cloud_Workflow_YAWL/tomcat/apache-tomcat-8.5.23/webapps/resourceService.war] has finished in [4,082] ms
+26-Nov-2017 17:19:46.902 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive [/home/kevin/YAN/Cloud_Workflow_YAWL/tomcat/apache-tomcat-8.5.23/webapps/twitterService.war]
+26-Nov-2017 17:19:47.039 INFO [localhost-startStop-1] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+26-Nov-2017 17:19:47.247 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [/home/kevin/YAN/Cloud_Workflow_YAWL/tomcat/apache-tomcat-8.5.23/webapps/twitterService.war] has finished in [345] ms
+26-Nov-2017 17:19:47.248 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive [/home/kevin/YAN/Cloud_Workflow_YAWL/tomcat/apache-tomcat-8.5.23/webapps/mailService.war]
+26-Nov-2017 17:19:47.354 INFO [localhost-startStop-1] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+26-Nov-2017 17:19:47.583 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [/home/kevin/YAN/Cloud_Workflow_YAWL/tomcat/apache-tomcat-8.5.23/webapps/mailService.war] has finished in [335] ms
+26-Nov-2017 17:19:47.583 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive [/home/kevin/YAN/Cloud_Workflow_YAWL/tomcat/apache-tomcat-8.5.23/webapps/yawl.war]
+26-Nov-2017 17:19:47.971 INFO [localhost-startStop-1] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+26-Nov-2017 17:19:50.521 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [/home/kevin/YAN/Cloud_Workflow_YAWL/tomcat/apache-tomcat-8.5.23/webapps/yawl.war] has finished in [2,938] ms
+26-Nov-2017 17:19:50.521 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive [/home/kevin/YAN/Cloud_Workflow_YAWL/tomcat/apache-tomcat-8.5.23/webapps/schedulingService.war]
+26-Nov-2017 17:19:50.987 INFO [localhost-startStop-1] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+26-Nov-2017 17:19:52.488 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [/home/kevin/YAN/Cloud_Workflow_YAWL/tomcat/apache-tomcat-8.5.23/webapps/schedulingService.war] has finished in [1,967] ms
+26-Nov-2017 17:19:52.489 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive [/home/kevin/YAN/Cloud_Workflow_YAWL/tomcat/apache-tomcat-8.5.23/webapps/procletService.war]
+26-Nov-2017 17:19:52.875 INFO [localhost-startStop-1] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+26-Nov-2017 17:19:54.498 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [/home/kevin/YAN/Cloud_Workflow_YAWL/tomcat/apache-tomcat-8.5.23/webapps/procletService.war] has finished in [2,009] ms
+26-Nov-2017 17:19:54.499 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive [/home/kevin/YAN/Cloud_Workflow_YAWL/tomcat/apache-tomcat-8.5.23/webapps/documentStore.war]
+26-Nov-2017 17:19:54.951 INFO [localhost-startStop-1] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+26-Nov-2017 17:19:56.153 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [/home/kevin/YAN/Cloud_Workflow_YAWL/tomcat/apache-tomcat-8.5.23/webapps/documentStore.war] has finished in [1,654] ms
+26-Nov-2017 17:19:56.154 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive [/home/kevin/YAN/Cloud_Workflow_YAWL/tomcat/apache-tomcat-8.5.23/webapps/digitalSignature.war]
+26-Nov-2017 17:19:56.457 INFO [localhost-startStop-1] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+26-Nov-2017 17:19:56.653 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [/home/kevin/YAN/Cloud_Workflow_YAWL/tomcat/apache-tomcat-8.5.23/webapps/digitalSignature.war] has finished in [499] ms
+26-Nov-2017 17:19:56.654 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive [/home/kevin/YAN/Cloud_Workflow_YAWL/tomcat/apache-tomcat-8.5.23/webapps/yawlWSInvoker.war]
+26-Nov-2017 17:19:56.839 INFO [localhost-startStop-1] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+26-Nov-2017 17:19:57.030 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [/home/kevin/YAN/Cloud_Workflow_YAWL/tomcat/apache-tomcat-8.5.23/webapps/yawlWSInvoker.war] has finished in [376] ms
+26-Nov-2017 17:19:57.030 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive [/home/kevin/YAN/Cloud_Workflow_YAWL/tomcat/apache-tomcat-8.5.23/webapps/costService.war]
+26-Nov-2017 17:19:57.397 INFO [localhost-startStop-1] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+26-Nov-2017 17:19:59.131 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [/home/kevin/YAN/Cloud_Workflow_YAWL/tomcat/apache-tomcat-8.5.23/webapps/costService.war] has finished in [2,101] ms
+26-Nov-2017 17:19:59.131 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive [/home/kevin/YAN/Cloud_Workflow_YAWL/tomcat/apache-tomcat-8.5.23/webapps/workletService.war]
+26-Nov-2017 17:19:59.480 INFO [localhost-startStop-1] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+26-Nov-2017 17:20:01.532 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [/home/kevin/YAN/Cloud_Workflow_YAWL/tomcat/apache-tomcat-8.5.23/webapps/workletService.war] has finished in [2,401] ms
+26-Nov-2017 17:20:01.533 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive [/home/kevin/YAN/Cloud_Workflow_YAWL/tomcat/apache-tomcat-8.5.23/webapps/mailSender.war]
+26-Nov-2017 17:20:01.639 INFO [localhost-startStop-1] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+26-Nov-2017 17:20:01.834 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [/home/kevin/YAN/Cloud_Workflow_YAWL/tomcat/apache-tomcat-8.5.23/webapps/mailSender.war] has finished in [301] ms
+26-Nov-2017 17:20:01.834 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive [/home/kevin/YAN/Cloud_Workflow_YAWL/tomcat/apache-tomcat-8.5.23/webapps/monitorService.war]
+26-Nov-2017 17:20:02.099 INFO [localhost-startStop-1] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+26-Nov-2017 17:20:02.569 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [/home/kevin/YAN/Cloud_Workflow_YAWL/tomcat/apache-tomcat-8.5.23/webapps/monitorService.war] has finished in [735] ms
+26-Nov-2017 17:20:02.571 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/kevin/YAN/Cloud_Workflow_YAWL/tomcat/apache-tomcat-8.5.23/webapps/manager]
+26-Nov-2017 17:20:02.592 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/kevin/YAN/Cloud_Workflow_YAWL/tomcat/apache-tomcat-8.5.23/webapps/manager] has finished in [21] ms
+26-Nov-2017 17:20:02.592 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/kevin/YAN/Cloud_Workflow_YAWL/tomcat/apache-tomcat-8.5.23/webapps/host-manager]
+26-Nov-2017 17:20:02.605 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/kevin/YAN/Cloud_Workflow_YAWL/tomcat/apache-tomcat-8.5.23/webapps/host-manager] has finished in [13] ms
+26-Nov-2017 17:20:02.606 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/kevin/YAN/Cloud_Workflow_YAWL/tomcat/apache-tomcat-8.5.23/webapps/docs]
+26-Nov-2017 17:20:02.614 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/kevin/YAN/Cloud_Workflow_YAWL/tomcat/apache-tomcat-8.5.23/webapps/docs] has finished in [7] ms
+26-Nov-2017 17:20:02.614 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/kevin/YAN/Cloud_Workflow_YAWL/tomcat/apache-tomcat-8.5.23/webapps/ROOT]
+26-Nov-2017 17:20:02.621 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/kevin/YAN/Cloud_Workflow_YAWL/tomcat/apache-tomcat-8.5.23/webapps/ROOT] has finished in [7] ms
+26-Nov-2017 17:20:02.621 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/kevin/YAN/Cloud_Workflow_YAWL/tomcat/apache-tomcat-8.5.23/webapps/examples]
+26-Nov-2017 17:20:02.707 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/kevin/YAN/Cloud_Workflow_YAWL/tomcat/apache-tomcat-8.5.23/webapps/examples] has finished in [86] ms
+26-Nov-2017 17:20:02.711 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8080"]
+26-Nov-2017 17:20:02.743 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["ajp-nio-8009"]
+26-Nov-2017 17:20:02.745 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in 20574 ms

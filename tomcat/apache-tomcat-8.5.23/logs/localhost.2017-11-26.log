@@ -1,0 +1,31 @@
+26-Nov-2017 16:04:06.743 WARNING [localhost-startStop-1] org.apache.catalina.session.StandardSession.doReadObject Cannot deserialize session attribute [SessionBean] for session [1A5E18A96F3C2003FE659643FCDE1F19]
+26-Nov-2017 16:04:35.952 INFO [localhost-startStop-1] org.apache.catalina.core.ApplicationContext.log ContextListener: contextInitialized()
+26-Nov-2017 16:04:35.952 INFO [localhost-startStop-1] org.apache.catalina.core.ApplicationContext.log SessionListener: contextInitialized()
+26-Nov-2017 16:41:21.185 INFO [localhost-startStop-2] org.apache.catalina.core.ApplicationContext.log SessionListener: contextDestroyed()
+26-Nov-2017 16:41:21.185 INFO [localhost-startStop-2] org.apache.catalina.core.ApplicationContext.log ContextListener: contextDestroyed()
+26-Nov-2017 16:41:21.439 WARNING [localhost-startStop-2] org.apache.catalina.session.StandardSession.doWriteObject Cannot serialize session attribute [SessionBean] for session [2522828078AB750164216B906909E350]
+ java.io.NotSerializableException: org.yawlfoundation.yawl.resourcing.calendar.CalendarLogger
+	at java.io.ObjectOutputStream.writeObject0(ObjectOutputStream.java:1184)
+	at java.io.ObjectOutputStream.defaultWriteFields(ObjectOutputStream.java:1548)
+	at java.io.ObjectOutputStream.writeSerialData(ObjectOutputStream.java:1509)
+	at java.io.ObjectOutputStream.writeOrdinaryObject(ObjectOutputStream.java:1432)
+	at java.io.ObjectOutputStream.writeObject0(ObjectOutputStream.java:1178)
+	at java.io.ObjectOutputStream.writeObject(ObjectOutputStream.java:348)
+	at org.apache.catalina.session.StandardSession.doWriteObject(StandardSession.java:1702)
+	at org.apache.catalina.session.StandardSession.writeObjectData(StandardSession.java:1094)
+	at org.apache.catalina.session.StandardManager.doUnload(StandardManager.java:315)
+	at org.apache.catalina.session.StandardManager.unload(StandardManager.java:265)
+	at org.apache.catalina.session.StandardManager.stopInternal(StandardManager.java:384)
+	at org.apache.catalina.util.LifecycleBase.stop(LifecycleBase.java:226)
+	at org.apache.catalina.core.StandardContext.stopInternal(StandardContext.java:5425)
+	at org.apache.catalina.util.LifecycleBase.stop(LifecycleBase.java:226)
+	at org.apache.catalina.core.ContainerBase$StopChild.call(ContainerBase.java:1435)
+	at org.apache.catalina.core.ContainerBase$StopChild.call(ContainerBase.java:1424)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+
+26-Nov-2017 17:19:44.496 WARNING [localhost-startStop-1] org.apache.catalina.session.StandardSession.doReadObject Cannot deserialize session attribute [SessionBean] for session [2522828078AB750164216B906909E350]
+26-Nov-2017 17:20:02.701 INFO [localhost-startStop-1] org.apache.catalina.core.ApplicationContext.log ContextListener: contextInitialized()
+26-Nov-2017 17:20:02.701 INFO [localhost-startStop-1] org.apache.catalina.core.ApplicationContext.log SessionListener: contextInitialized()

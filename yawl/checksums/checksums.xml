@@ -2,7 +2,7 @@
 <!-- This file is used for auto-updating. PLEASE DO NOT MODIFY OR DELETE -->
 <checksums>
   <version>4.1</version>
-  <timestamp>2017-11-25 18.54.45</timestamp>
+  <timestamp>2017-11-26 16.52.21</timestamp>
   <lib hash="041626fcc7681a94bbbb663add907944">
     <file name="jaxb-xjc.jar" md5="108abd6d0fbff92780166dbea046ec26" size="2989016" timestamp="2017-11-25T18:26:55" path="A"/>
     <file name="commons-logging-1.1.1.jar" md5="e2c390fe739b2550a218262b28f290ce" size="60841" timestamp="2017-11-25T18:26:55" path="A"/>
@@ -842,11 +842,11 @@
     </orderfulfillment>
   </webapps>
   <yawllib>
-    <file name="yawl-lib-4.1.jar" md5="915ae19e15d24fac0b733fe5db01c9c6" size="2589338" timestamp="2017-11-25T18:54:32" path="AM"/>
+    <file name="yawl-lib-4.1.jar" md5="6bb448fe931059b85b7d2f4ff81a243e" size="2589338" timestamp="2017-11-26T16:52:20" path="AM"/>
   </yawllib>
   <controlpanel>
-    <build>382</build>
-    <file name="YawlControlPanel-4.1.jar" md5="914b39bb1b577717d672cc67af5d2cff" size="339578" timestamp="2017-10-25T13:04:58" path="AM"/>
+    <build>383</build>
+    <file name="YawlControlPanel-4.1.jar" md5="d763b66db8e2b739a85fbf47b0f3d818" size="339471" timestamp="2017-11-26T16:52:21" path="AM"/>
   </controlpanel>
   <paths>
     <path id="host">https://raw.githubusercontent.com/</path>
