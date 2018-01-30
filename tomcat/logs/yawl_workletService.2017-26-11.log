@@ -1,0 +1,3 @@
+2017-11-26 16:04:31,555 [INFO ] WorkletService       :- Exception monitoring and handling is enabled
+2017-11-26 16:41:21,209 [INFO ] WorkletGateway       :- Deregistered JDBC driver: org.postgresql.Driver@1ea1860
+2017-11-26 17:19:59,694 [INFO ] WorkletService       :- Exception monitoring and handling is enabled
